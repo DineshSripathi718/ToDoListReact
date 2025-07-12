@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Eater&family=Macondo+Swash+Caps&family=Nabla&family=Rubik+Burned&display=swap');
+
+.toDoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 30px;
+}
+
+.toDoContainer .title{
+    font-family: "Macondo Swash Caps", cursive;
+    font-size: 3em;
+    color : white;
+}
+
+.container { 
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 30px;
+}
+
+.container input{
+    font-size: 17px;
+    padding : 10px;
+    border-radius: 10px;
+    border : 1px solid black;
+    outline : none;
+}
+
+.container button{
+    padding : 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    border : 1px solid rgb(255, 255, 255);
+}
+
+.taskList{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.taskList th{
+    border : 1px solid rgb(255, 255, 255);
+    padding : 10px;
+    font-size: 20px;
+    font-family: "Macondo Swash Caps", cursive;
+    letter-spacing: 10px;
+}
+
+.taskList td{
+    padding : 10px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-size: 700;
+    color : white;
+}
+
+.taskList td button{
+    margin : 0px 10px;
+    border : 1px solid rgb(255, 255, 255);   
+    padding : 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity : .8;
+    transition: opacity .4s linear;
+}
+
+.taskList td button:hover{
+    opacity : 1;
+}
+
+.taskList .upButton,
+.taskList .downButton{
+    background-color: rgba(0, 128, 0, 0.905);
+    color : white;
+}
+
+.taskList .deleteButton{
+    background-color: red;
+    color : white;
+}
+
+
+.taskList
+.displayError{
+    font-size: 30px;    
+    font-family: "Carattere", cursive;
+}
+
+.taskList .taskTitle{
+    background-color: rgba(6, 131, 6, 0.863);
+    color : white;
+}
+
+.addButton{
+    background-color: green;
+    color : white;
+    transition: opacity .5s linear;
+}
+
+.addButton:hover{
+    opacity : .8;
+}
+
+.taskList tr:nth-child(even){
+    background-color: rgba(8, 174, 8, 0.496);
+}
